@@ -2,7 +2,9 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\ProductApiController;
 
-Route::get('/products', function () {
-    return App\Models\Product::all();
-});
+Route::apiResource
+(
+    'products', ProductApiController::class
+);
