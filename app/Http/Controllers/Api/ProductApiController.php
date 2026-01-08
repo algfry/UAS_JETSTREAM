@@ -34,12 +34,17 @@ class ProductApiController extends Controller
         return response()->json(Product::findOrFail($id));
     }
 
-    // PUT /api/products/{id}
     public function update(Request $request, $id)
     {
         $product = Product::findOrFail($id);
 
-        $product->update($request->all());
+        $data = $request->validate([
+            'name' => 'required',
+            'price' => 'required|numeric',
+            'description' => 'nullable'
+        ]);
+
+        $product->update($data);
 
         return response()->json($product);
     }
