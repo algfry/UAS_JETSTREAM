@@ -1,4 +1,4 @@
-<?php
+<?php //Menghubungkan Controller ke Database
 
 namespace App\Models;
 

@@ -1,4 +1,4 @@
-<?php
+<?php //logika CRUD API 
 
 namespace App\Http\Controllers\Api;
 
