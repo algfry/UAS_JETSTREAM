@@ -1,4 +1,4 @@
-<?php //Menghubungkan Controller ke Database
+<?php //Menghubungkan Controller ke Database. Tanpa model, controller tidak bisa bicara ke database.
 
 namespace App\Models;
 
