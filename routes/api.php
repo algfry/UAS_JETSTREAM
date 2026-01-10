@@ -1,5 +1,4 @@
-<?php //Menghubungkan URL → Controller
-
+<?php //Menentukan URL API yang dites di Postman.
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ProductApiController;

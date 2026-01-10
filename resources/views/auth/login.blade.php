@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-guest-layout> // hasi tampilan untuk file bernama (login.blade.php) berarti untuk tampilan login
     <x-authentication-card>
         <x-slot name="logo">
             <x-authentication-card-logo />
